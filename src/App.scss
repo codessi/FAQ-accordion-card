@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+  // #### Text
+
+--Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+--Soft-red: hsl(14, 88%, 65%);
+
+// #### Gradient
+
+// Background gradient:
+
+--Soft-violet: hsl(273, 75%, 66%);
+--Soft-blue: hsl(240, 73%, 65%);
+
+// ### Neutral
+
+// #### Text
+
+--Very-dark-grayish-blue: hsl(237, 12%, 33%);
+--Dark-grayish-blue: hsl(240, 6%, 50%);
+
+// #### Dividers
+
+--Light-grayish-blue: hsl(240, 5%, 91%);
+
+}
+
+
+*, *::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  background: linear-gradient(180deg, var(--Soft-violet), var(--Soft-blue)) no-repeat;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+.card{
+  background-color: white;
+  position: relative;
+  margin-top: 6rem;
+  height:auto;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  .content-container {
+    margin-top: 7rem;
+    
+
+    h3{
+      text-align: center;
+      font-size: 1.7rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  img.hero{
+    position: absolute;
+    top: -7rem;
+    width: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pattern{
+    position: absolute;
+    top: -2%;
+    width: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .center{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button{
+  	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  display: flex;
+  justify-content: space-between;
+  // border: solid red;
+  width: 100%;
+  align-items: center;
+
+  }
+
+  .answer{
+    color:red;
+    height: 0;
+    overflow: hidden;
+
+  }
+
+  .questions.bold{
+    font-weight: bold;
+  }
+
+  .show{
+    height: 3rem;
+    // border:red solid;
+    transition: all 1s ease;
+    overflow: hidden;
+  }
+  .hide{
+    height: 0;
+    overflow: hidden;
+    // border:red solid;
+    transition: all .3s ease;
+  }
+  .arrow{
+    transition: all .3s  ease;
+  }
+  
+
+  .down-arrow{
+    transform: rotate(180deg);
+    transition: all .3s ease;
+  }
+
+  article{
+    padding: .6rem 0;
+    border-bottom: rgba(128, 128, 128, 0.502) 1px solid;
+  }
+}
+
