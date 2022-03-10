@@ -49,9 +49,10 @@ img{
   background-color: white;
   position: relative;
   margin-top: 6rem;
-  height:auto;
+  min-height:70vh;
   border-radius: 1rem;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
 
   .content-container {
     margin-top: 7rem;
