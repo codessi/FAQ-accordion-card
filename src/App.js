@@ -1,6 +1,7 @@
 
 import './App.scss';
 import illustration from "./../src/images/illustration-woman-online-mobile.svg"
+import illustrationDesk from "./../src/images/illustration-woman-online-desktop.svg"
 
 import bigPattern from "./../src/images/bg-pattern-mobile.svg"
 
@@ -12,8 +13,13 @@ function App() {
   return (
     <>  
       <div className="card">
-        <img className= "hero" src={illustration} alt="" />
-        <img className= "pattern" src={bigPattern}alt="" />
+        <div className="img-container">
+          <picture>
+            <source media="(min-width:900px)" srcset={illustrationDesk}/>
+            <img className= "hero" src={illustration} alt="" />
+          </picture>
+          <img className= "pattern" src={bigPattern}alt="" />
+        </div>
         <div className="content-container">
           <h3 className="title">FAQ</h3>
             {data.map((el,index)=> {

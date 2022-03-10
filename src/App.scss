@@ -142,3 +142,52 @@ img{
   }
 }
 
+@media screen and (min-width: 900px){
+  body *{
+    // border: red solid;
+  }
+  .img-container{
+    display: block;
+    border: dotted;
+    width: 100%;
+
+  }
+ 
+  .card {
+    display: flex;
+   max-width: 60rem;
+   margin: 3rem auto;
+   position: relative;
+   overflow: hidden;
+    // border: dotted;
+    align-items: center;
+    border: pink dotted; 
+
+    .content-container{
+    border: dotted;
+    margin-top: 0;
+    }
+
+    picture{
+      width: 100%;
+    }
+    img.hero{
+    position: relative;
+    border: yellow solid;
+    top: 0;
+    left: 10rem;
+
+    // top: 2rem;
+    // left: 10rem;
+    width: 100%;
+    // object-fit: cover;
+    }
+  }
+
+  .img-container, .content-container{
+    flex: 1;
+
+  }
+ 
+
+}
