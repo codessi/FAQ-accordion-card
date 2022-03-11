@@ -52,7 +52,12 @@ img{
   min-height:70vh;
   border-radius: 1rem;
   padding: 1rem;
+  padding-left: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+
+  .box{
+    visibility: none;
+  }
 
   .content-container {
     margin-top: 7rem;
@@ -144,50 +149,96 @@ img{
 
 @media screen and (min-width: 900px){
   body *{
-    // border: red solid;
+    
   }
   .img-container{
     display: block;
-    border: dotted;
-    width: 100%;
+
+
+    min-height: 300px;
 
   }
  
   .card {
-    display: flex;
+   display: flex;
+   min-height: 60vh;
    max-width: 60rem;
-   margin: 3rem auto;
+   margin: 4rem auto;
    position: relative;
-   overflow: hidden;
-    // border: dotted;
+
     align-items: center;
-    border: pink dotted; 
+
 
     .content-container{
-    border: dotted;
+
     margin-top: 0;
+    z-index: 0;
+    
     }
 
     picture{
       width: 100%;
+      
     }
     img.hero{
     position: relative;
-    border: yellow solid;
-    top: 0;
-    left: 10rem;
 
-    // top: 2rem;
-    // left: 10rem;
-    width: 100%;
-    // object-fit: cover;
+    overflow: hidden;
+    top: 0;
+    left: 9.1rem;
+    width: 300px;
+    //
+    
+    
+    height: 290px;
+    object-fit: cover;
+    object-position: bottom right;
+  
     }
+    img.pattern{
+      position: absolute;
+      
+      top: -22rem;
+      left: -7rem;
+      width: 900px;
+      
+      
+      
+      height: 900px;
+      object-fit: contain;
+      
+    }
+
+    img.box{
+      position: absolute;
+      
+      
+      
+      left: -5rem;
+      top: 11rem;
+      width: 150px;
+      
+      
+      
+      height: 150px;
+      object-fit: contain;
+      
+    }
+
+
   }
 
   .img-container, .content-container{
     flex: 1;
+    
 
   }
- 
+     img.box-two{
+      position: absolute;
+      top: 100px;
+      left: -50px;
+      width: 200px;
+      
+    }
 
 }
