@@ -52,11 +52,12 @@ img{
   min-height:70vh;
   border-radius: 1rem;
   padding: 1rem;
-  padding-left: 0;
+  
   box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
 
   .box{
-    visibility: none;
+    // visibility: hidden;
+    display: none;
   }
 
   .content-container {
@@ -148,9 +149,7 @@ img{
 }
 
 @media screen and (min-width: 900px){
-  body *{
-    
-  }
+
   .img-container{
     display: block;
 
@@ -164,6 +163,7 @@ img{
    min-height: 60vh;
    max-width: 60rem;
    margin: 4rem auto;
+   padding-left: 0;
    position: relative;
 
     align-items: center;
@@ -211,6 +211,7 @@ img{
 
     img.box{
       position: absolute;
+      display: block;
       
       
       
@@ -233,12 +234,6 @@ img{
     
 
   }
-     img.box-two{
-      position: absolute;
-      top: 100px;
-      left: -50px;
-      width: 200px;
-      
-    }
+
 
 }
